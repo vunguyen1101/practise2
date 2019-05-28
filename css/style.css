@@ -1,0 +1,467 @@
+/* oswald-regular - latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswald/oswald-v17-latin-regular.eot"), url("../fonts/oswald/oswald-v17-latin-regular.woff2") format("woff2"), url("../fonts/oswald/oswald-v17-latin-regular.woff") format("woff"), url("../fonts/oswald/oswald-v17-latin-regular.ttf") format("truetype"), url("../fonts/oswald/oswald-v17-latin-500.svg") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: Lato-regular;
+  font-style: normal;
+  src: url("../fonts/Lato/lato-v15-latin-regular.eot"), url("../fonts/Lato/lato-v15-latin-regular.woff2") format("woff2"), url("../fonts/Lato/lato-v15-latin-regular.woff") format("woff"), url("../fonts/Lato/lato-v15-latin-regular.ttf") format("truetype"), url("../fonts/Lato/lato-v15-latin-regular.svg") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: Lato-700;
+  font-style: normal;
+  src: url("../fonts/Lato/lato-v15-latin-700.eot"), url("../fonts/Lato/lato-v15-latin-700.woff2") format("woff2"), url("../fonts/Lato/lato-v15-latin-700.woff2") format("woff"), url("../fonts/Lato/lato-v15-latin-700.ttf") format("truetype"), url("../fonts/Lato/lato-v15-latin-700.svg") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  src: url("../fonts/Lato/lato-v15-latin.eot"), url("../fonts/Lato/lato-v15-latin.woff2") format("woff2"), url("../fonts/Lato/lato-v15-latin.woff2") format("woff"), url("../fonts/Lato/lato-v15-latin.ttf") format("truetype"), url("../fonts/Lato/lato-v15-latin.svg") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: Lato-300;
+  font-style: normal;
+  src: url("../fonts/Lato/lato-v15-latin-300.eot"), url("../fonts/Lato/lato-v15-latin-300.woff2") format("woff2"), url("../fonts/Lato/lato-v15-latin-300.woff2") format("woff"), url("../fonts/Lato/lato-v15-latin-300.ttf") format("truetype"), url("../fonts/Lato/lato-v15-latin-300.svg") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: 'Oswald-200';
+  font-style: normal;
+  src: url("../fonts/oswald/oswald-v17-latin-200.eot"), url("../fonts/oswald/oswald-v17-latin-200.woff2") format("woff2"), url("../fonts/oswald/oswald-v17-latin-200.woff") format("woff"), url("../fonts/oswald/oswald-v17-latin-200.ttf") format("truetype"), url("../fonts/oswald/oswald-v17-latin-200.svg") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: 'Oswald-300';
+  font-style: normal;
+  src: url("../fonts/oswald/oswald-v17-latin-300.eot"), url("../fonts/oswald/oswald-v17-latin-300.woff2") format("woff2"), url("../fonts/oswald/oswald-v17-latin-300.woff") format("woff"), url("../fonts/oswald/oswald-v17-latin-300.ttf") format("truetype"), url("../fonts/oswald/oswald-v17-latin-300.svg") format("svg");
+  /* Legacy iOS */ }
+header {
+  background-image: url("../images/headerBrg_01.jpg");
+  background-repeat: no-repeat;
+  height: 660px;
+  position: relative;
+  text-align: center; }
+  header .headd {
+    position: absolute; }
+    header .headd .headeli {
+      padding: 50px 0px;
+      margin-top: 100px;
+      width: 100%;
+      line-height: 100px;
+      text-transform: uppercase;
+      font-family: "Oswald";
+      font-size: 100px;
+      color: #ffffff;
+      font-weight: 400;
+      background-color: rgba(28, 28, 29, 0.3); }
+    header .headd .amazing {
+      padding: 70px 420px;
+      text-transform: uppercase;
+      font-family: Lato-regular;
+      font-size: 36px;
+      color: #ffffff;
+      font-weight: bold; }
+      header .headd .amazing .orange {
+        background-color: #f89a3d;
+        padding: 0px 10px; }
+
+nav {
+  margin-top: 10px;
+  padding-bottom: 80px; }
+  nav .logo {
+    margin-top: 10px;
+    float: left;
+    font-family: "Oswald";
+    font-size: 36px;
+    color: #f89a3d;
+    font-weight: 400; }
+  nav .navbar {
+    float: right; }
+    nav .navbar a {
+      line-height: 50px;
+      padding-bottom: 20px;
+      text-decoration: none;
+      font-family: "Oswald";
+      font-size: 18px;
+      color: #566065;
+      font-weight: 400; }
+      nav .navbar a:hover {
+        color: #f89a3d;
+        border-bottom: 2px solid #f89a3d; }
+    nav .navbar ul li {
+      margin-right: 30px;
+      list-style-type: none;
+      display: inline-block; }
+      nav .navbar ul li img {
+        margin-left: 5px; }
+      nav .navbar ul li:last-child {
+        margin-right: 0px; }
+
+.aboutusctn {
+  padding-left: 140px;
+  padding-right: 140px;
+  padding: 80px 140px 0px 140px;
+  text-align: center;
+  background-color: #ffffffff; }
+  .aboutusctn .AboutUs {
+    clear: both;
+    position: relative;
+    font-family: "Oswald";
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 400; }
+    .aboutusctn .AboutUs .circle {
+      width: 170px;
+      height: 170px;
+      background: #566065;
+      text-align: center;
+      -moz-border-radius: 170px;
+      -webkit-border-radius: 170px;
+      border-radius: 170px;
+      position: absolute;
+      left: 36%; }
+    .aboutusctn .AboutUs .circle2 {
+      position: absolute;
+      width: 170px;
+      height: 170px;
+      background: #f89a3d;
+      text-align: center;
+      -moz-border-radius: 170px;
+      -webkit-border-radius: 170px;
+      border-radius: 170px;
+      left: 47%; }
+      .aboutusctn .AboutUs .circle2::before {
+        content: "ABOUT US";
+        top: 40px;
+        left: -135px;
+        width: 200%;
+        position: absolute; }
+  .aboutusctn .subtit {
+    margin-top: 200px;
+    padding-bottom: 100px;
+    position: relative;
+    font-family: Lato-regular;
+    font-size: 30px;
+    color: #566065;
+    font-weight: normal; }
+    .aboutusctn .subtit::after {
+      position: absolute;
+      left: 47.7%;
+      bottom: -40px;
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-top: 40px solid #ffffff; }
+
+.fullaboutus {
+  box-shadow: inset 0px 40px 39px -39px rgba(0, 0, 0, 0.44);
+  padding-top: 100px;
+  background-color: #f6f6f6; }
+  .fullaboutus .iconhover {
+    text-align: center; }
+    .fullaboutus .iconhover:hover .icon {
+      background-color: #ffddbb; }
+    .fullaboutus .iconhover:hover span {
+      color: #f89a3d; }
+  .fullaboutus .iconcover {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; }
+    .fullaboutus .iconcover .icon {
+      position: relative;
+      width: 70px;
+      height: 70px;
+      background: #f89a3d;
+      text-align: center;
+      -moz-border-radius: 70px;
+      -webkit-border-radius: 70px;
+      border-radius: 70px; }
+      .fullaboutus .iconcover .icon::before {
+        position: absolute;
+        content: "";
+        width: 56px;
+        height: 56px;
+        background: #f89a3d;
+        text-align: center;
+        -moz-border-radius: 56px;
+        -webkit-border-radius: 56px;
+        border-radius: 56px;
+        left: 7px;
+        top: 7px; }
+  .fullaboutus span {
+    font-family: "Oswald";
+    font-size: 24px;
+    color: #566065;
+    font-weight: normal; }
+  .fullaboutus .decrpt {
+    margin-top: 10px;
+    font-family: Lato-300;
+    font-size: 16px;
+    color: #566065;
+    font-weight: normal; }
+  .fullaboutus #abus1 {
+    z-index: 1;
+    position: absolute;
+    left: 24%;
+    top: 15px; }
+  .fullaboutus #abus2 {
+    z-index: 1;
+    position: absolute;
+    left: 24px;
+    top: 20px; }
+  .fullaboutus #abus3 {
+    z-index: 1;
+    position: absolute;
+    left: 27%;
+    top: 17px; }
+  .fullaboutus .learnmoreboutus {
+    margin: 70px 0px 50px 0px;
+    position: relative;
+    border-top: 1px solid #e7e7e7;
+    font-family: Lato-300;
+    font-size: 16px;
+    color: #c3c3c3;
+    font-weight: normal; }
+    .fullaboutus .learnmoreboutus p {
+      padding: 0 10px;
+      background-color: #f6f6f6;
+      margin-top: -13px;
+      z-index: 2;
+      position: absolute;
+      left: 42%; }
+  .fullaboutus .percentline {
+    margin-bottom: 15px; }
+  .fullaboutus .no1 {
+    height: 40px;
+    background-color: #566065;
+    line-height: 40px;
+    position: relative; }
+    .fullaboutus .no1 .feature {
+      left: 20px;
+      position: absolute;
+      z-index: 2;
+      font-family: Lato-300;
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: normal; }
+    .fullaboutus .no1 .per {
+      margin-right: 20px;
+      right: 10%;
+      position: absolute;
+      z-index: 2;
+      font-family: Lato-300;
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: normal; }
+    .fullaboutus .no1::before {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 90%;
+      background-color: #f89a3d; }
+  .fullaboutus .no2 {
+    height: 40px;
+    background-color: #566065;
+    line-height: 40px;
+    position: relative; }
+    .fullaboutus .no2 .feature {
+      left: 20px;
+      position: absolute;
+      z-index: 2;
+      font-family: Lato-300;
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: normal; }
+    .fullaboutus .no2 .per {
+      margin-right: 20px;
+      right: 15%;
+      position: absolute;
+      z-index: 2;
+      font-family: Lato-300;
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: normal; }
+    .fullaboutus .no2::before {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 85%;
+      background-color: #f89a3d; }
+  .fullaboutus .no3 {
+    height: 40px;
+    background-color: #566065;
+    line-height: 40px;
+    position: relative; }
+    .fullaboutus .no3 .feature {
+      left: 20px;
+      position: absolute;
+      z-index: 2;
+      font-family: Lato-300;
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: normal; }
+    .fullaboutus .no3 .per {
+      margin-right: 20px;
+      right: 30%;
+      position: absolute;
+      z-index: 2;
+      font-family: Lato-300;
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: normal; }
+    .fullaboutus .no3::before {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 70%;
+      background-color: #f89a3d; }
+  .fullaboutus .no4 {
+    height: 40px;
+    background-color: #566065;
+    line-height: 40px;
+    position: relative; }
+    .fullaboutus .no4 .feature {
+      left: 20px;
+      position: absolute;
+      z-index: 2;
+      font-family: Lato-300;
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: normal; }
+    .fullaboutus .no4 .per {
+      margin-right: 20px;
+      right: 5%;
+      position: absolute;
+      z-index: 2;
+      font-family: Lato-300;
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: normal; }
+    .fullaboutus .no4::before {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 95%;
+      background-color: #f89a3d; }
+  .fullaboutus .figure {
+    padding-bottom: 100px;
+    width: 100%;
+    text-align: center;
+    font-family: "Oswald";
+    font-size: 36px;
+    color: #566065;
+    font-weight: normal; }
+  .fullaboutus .number {
+    margin-top: 40px;
+    font-family: "Oswald";
+    font-size: 60px;
+    color: #f89a3d;
+    font-weight: normal; }
+
+.markHain {
+  margin-bottom: 20px;
+  padding: 90px 415px;
+  text-align: center;
+  height: 500px;
+  width: auto;
+  background-image: url("../images/marktwain_06.jpg"); }
+  .markHain .quote {
+    margin: 40px 0px;
+    font-family: "Oswald-200";
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: normal; }
+  .markHain .author {
+    font-family: "Oswald-200";
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: normal; }
+
+.ourteamctn {
+  padding-left: 140px;
+  padding-right: 140px;
+  padding: 80px 140px 0px 140px;
+  text-align: center;
+  background-color: #ffffffff; }
+  .ourteamctn .AboutUs {
+    clear: both;
+    position: relative;
+    font-family: "Oswald";
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 400; }
+    .ourteamctn .AboutUs .circle {
+      width: 170px;
+      height: 170px;
+      background: #566065;
+      text-align: center;
+      -moz-border-radius: 170px;
+      -webkit-border-radius: 170px;
+      border-radius: 170px;
+      position: absolute;
+      left: 36%; }
+    .ourteamctn .AboutUs .circle2 {
+      position: absolute;
+      width: 170px;
+      height: 170px;
+      background: #f89a3d;
+      text-align: center;
+      -moz-border-radius: 170px;
+      -webkit-border-radius: 170px;
+      border-radius: 170px;
+      left: 47%; }
+      .ourteamctn .AboutUs .circle2::before {
+        content: "OUR TEAM";
+        top: 40px;
+        left: -135px;
+        width: 200%;
+        position: absolute; }
+  .ourteamctn .subtit {
+    margin-top: 200px;
+    padding-bottom: 100px;
+    position: relative;
+    font-family: Lato-regular;
+    font-size: 30px;
+    color: #566065;
+    font-weight: normal; }
+    .ourteamctn .subtit::after {
+      position: absolute;
+      left: 47.7%;
+      bottom: -40px;
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-top: 40px solid #ffffff; }
+  .ourteamctn span {
+    color: #f89a3d; }
+
+.johnDoe {
+  margin-bottom: 10px;
+  background-color: #ffffff; }
+  .johnDoe .decrpt {
+    padding: 0px 20px 30px 20px;
+    color: #afb6ba; }
+  .johnDoe .tagname {
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    justify-content: space-between; }
+  .johnDoe .name {
+    font-family: "Oswald";
+    font-size: 18px;
+    color: #666e73;
+    font-weight: normal; }
+  .johnDoe .founder {
+    font-family: "Oswald";
+    font-size: 14px;
+    color: #afb6ba;
+    font-weight: normal; }
+
+.amazingclient {
+  color: #566065;
+  padding: 10px 120px; }
+
+/*# sourceMappingURL=style.css.map */

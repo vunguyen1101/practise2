@@ -1,0 +1,99 @@
+
+@mixin fontface($fontfamily,$fontsize,$color,$fontweight) 
+{
+    font-family: $fontfamily;
+    font-size: $fontsize;
+    color: $color;
+    font-weight: $fontweight;
+}
+@mixin DrawCircle($width,$color) {
+    width: $width;
+    height: $width;
+    background: $color;
+    text-align: center;
+    -moz-border-radius: $width;
+    -webkit-border-radius: $width;
+    border-radius:$width;
+    
+}
+@mixin AboutUsImg($left,$top) {
+    z-index: 1;
+    position: absolute; 
+    left: $left;
+    top:$top;
+}
+@mixin Drawpercentline($percent) {
+    
+    height: 40px;
+    background-color: #566065;
+    line-height: 40px;
+    position: relative;
+    .feature{
+        left: 20px;
+        position: absolute;
+        z-index: 2;
+        @include fontface($lato-light,16px,#ffffff,normal);
+    }
+    .per{
+        margin-right: 20px;
+        right: 100%-$percent;
+        position: absolute;
+        z-index: 2;
+        @include fontface($lato-light,16px,#ffffff,normal);
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: $percent;
+        background-color: #f89a3d;
+    }
+}
+
+@mixin Draw2cicle($mess) {
+    padding-left: 140px;
+    padding-right: 140px;
+    padding: 80px 140px 0px 140px;
+    text-align: center;
+    background-color:#ffffffff;
+    .AboutUs{
+        clear: both;
+        position: relative;
+        @include fontface($font-heading,60px,#ffffff,400); 
+        .circle {
+            @include DrawCircle(170px,$main-dark);
+            position: absolute;
+            left: 36%;
+        }
+        .circle2 {
+            position: absolute;
+            @include DrawCircle(170px,$main-bright);
+            left: 47%;
+            &::before{
+                content: $mess;
+                top: 40px;
+                left: -135px;
+                width: 200%;
+                position: absolute;
+            }
+        }
+    
+    }
+    .subtit{
+        margin-top: 200px;
+        padding-bottom: 100px;
+        position: relative;
+        @include fontface($lato-regular,30px,$main-dark,normal);
+        &::after{
+            position: absolute;
+            left: 47.7%;
+            bottom: -40px;
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-top: 40px solid #ffffff;
+        }
+    }
+}

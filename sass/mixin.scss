@@ -51,11 +51,17 @@
 }
 
 @mixin Draw2cicle($mess) {
+    @media (max-width: 1023px) {  
+        padding: 80px 0px;   
+    }
     padding-left: 140px;
     padding-right: 140px;
     padding: 80px 140px 0px 140px;
     text-align: center;
     background-color:#ffffffff;
+    span{
+        color: $main-bright;
+    }
     .AboutUs{
         clear: both;
         position: relative;

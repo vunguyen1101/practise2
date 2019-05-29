@@ -1,5 +1,5 @@
 
-
+$font-Feedback:'OpenSans-Light-Italic';
   /* oswald-regular - latin */
 $font-heading: 'Oswald';
 @font-face {
@@ -72,3 +72,21 @@ $lato-light:Lato-300;
        url('../fonts/oswald/oswald-v17-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/oswald/oswald-v17-latin-300.svg') format('svg'); /* Legacy iOS */
 }
+
+@font-face {
+     font-family: 'OpenSans-Light';
+     font-style: normal;
+     src: url('../fonts/OpenSans/OpenSans-Light.ttf')format('truetype');
+}
+
+@font-face {
+font-family: 'OpenSans-Light-Italic';
+font-style: normal;
+src: url('../fonts/OpenSans/OpenSans-LightItalic.ttf')format('truetype');
+}
+
+@font-face {
+     font-family: 'OpenSans-regular';
+     font-style: normal;
+     src: url('../fonts/OpenSans/OpenSans-Regular.ttf')format('truetype');
+     }

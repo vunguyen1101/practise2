@@ -35,6 +35,18 @@
   font-style: normal;
   src: url("../fonts/oswald/oswald-v17-latin-300.eot"), url("../fonts/oswald/oswald-v17-latin-300.woff2") format("woff2"), url("../fonts/oswald/oswald-v17-latin-300.woff") format("woff"), url("../fonts/oswald/oswald-v17-latin-300.ttf") format("truetype"), url("../fonts/oswald/oswald-v17-latin-300.svg") format("svg");
   /* Legacy iOS */ }
+@font-face {
+  font-family: 'OpenSans-Light';
+  font-style: normal;
+  src: url("../fonts/OpenSans/OpenSans-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: 'OpenSans-Light-Italic';
+  font-style: normal;
+  src: url("../fonts/OpenSans/OpenSans-LightItalic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'OpenSans-regular';
+  font-style: normal;
+  src: url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype"); }
 header {
   background-image: url("../images/headerBrg_01.jpg");
   background-repeat: no-repeat;
@@ -42,7 +54,8 @@ header {
   position: relative;
   text-align: center; }
   header .headd {
-    position: absolute; }
+    position: absolute;
+    width: 100%; }
     header .headd .headeli {
       padding: 50px 0px;
       margin-top: 100px;
@@ -64,6 +77,9 @@ header {
       header .headd .amazing .orange {
         background-color: #f89a3d;
         padding: 0px 10px; }
+    @media (max-width: 1500px) {
+      header .headd .amazing {
+        padding: 70px 0px; } }
 
 nav {
   margin-top: 10px;
@@ -103,6 +119,11 @@ nav {
   padding: 80px 140px 0px 140px;
   text-align: center;
   background-color: #ffffffff; }
+  @media (max-width: 1023px) {
+    .aboutusctn {
+      padding: 80px 0px; } }
+  .aboutusctn span {
+    color: #f89a3d; }
   .aboutusctn .AboutUs {
     clear: both;
     position: relative;
@@ -194,7 +215,8 @@ nav {
     font-family: "Oswald";
     font-size: 24px;
     color: #566065;
-    font-weight: normal; }
+    font-weight: normal;
+    text-transform: uppercase; }
   .fullaboutus .decrpt {
     margin-top: 10px;
     font-family: Lato-300;
@@ -366,25 +388,36 @@ nav {
   text-align: center;
   height: 500px;
   width: auto;
-  background-image: url("../images/marktwain_06.jpg"); }
+  background-image: url("../images/marktwain_06.jpg");
+  background-repeat: no-repeat; }
   .markHain .quote {
     margin: 40px 0px;
     font-family: "Oswald-200";
     font-size: 36px;
     color: #ffffff;
     font-weight: normal; }
+    .markHain .quote span {
+      color: #f89a3d; }
   .markHain .author {
     font-family: "Oswald-200";
     font-size: 24px;
     color: #ffffff;
     font-weight: normal; }
 
+@media (max-width: 1500px) {
+  .markHain {
+    padding: 70px 0px; } }
 .ourteamctn {
   padding-left: 140px;
   padding-right: 140px;
   padding: 80px 140px 0px 140px;
   text-align: center;
   background-color: #ffffffff; }
+  @media (max-width: 1023px) {
+    .ourteamctn {
+      padding: 80px 0px; } }
+  .ourteamctn span {
+    color: #f89a3d; }
   .ourteamctn .AboutUs {
     clear: both;
     position: relative;
@@ -436,12 +469,21 @@ nav {
       border-left: 30px solid transparent;
       border-right: 30px solid transparent;
       border-top: 40px solid #ffffff; }
-  .ourteamctn span {
-    color: #f89a3d; }
 
 .johnDoe {
   margin-bottom: 10px;
   background-color: #ffffff; }
+  .johnDoe .JohnDoeImg {
+    background-image: url("../images/johnDoe_03.jpg");
+    background-repeat: no-repeat;
+    height: 246px; }
+    .johnDoe .JohnDoeImg .jdhover {
+      background-color: rgba(248, 154, 61, 0.5);
+      height: 246px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      display: none; }
   .johnDoe .decrpt {
     padding: 0px 20px 30px 20px;
     color: #afb6ba; }
@@ -459,9 +501,206 @@ nav {
     font-size: 14px;
     color: #afb6ba;
     font-weight: normal; }
+  .johnDoe:hover .JohnDoeImg .jdhover {
+    display: flex; }
+  .johnDoe .viewprofile {
+    background-color: rgba(86, 96, 101, 0.3);
+    font-family: "Oswald";
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    height: 50px;
+    line-height: 50px; }
 
 .amazingclient {
   color: #566065;
   padding: 10px 120px; }
+
+.buble {
+  margin-top: 30px; }
+
+.cilent {
+  margin-top: 50px; }
+
+.SERVICEctn {
+  padding-left: 140px;
+  padding-right: 140px;
+  padding: 80px 140px 0px 140px;
+  text-align: center;
+  background-color: #ffffffff; }
+  @media (max-width: 1023px) {
+    .SERVICEctn {
+      padding: 80px 0px; } }
+  .SERVICEctn span {
+    color: #f89a3d; }
+  .SERVICEctn .AboutUs {
+    clear: both;
+    position: relative;
+    font-family: "Oswald";
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 400; }
+    .SERVICEctn .AboutUs .circle {
+      width: 170px;
+      height: 170px;
+      background: #566065;
+      text-align: center;
+      -moz-border-radius: 170px;
+      -webkit-border-radius: 170px;
+      border-radius: 170px;
+      position: absolute;
+      left: 36%; }
+    .SERVICEctn .AboutUs .circle2 {
+      position: absolute;
+      width: 170px;
+      height: 170px;
+      background: #f89a3d;
+      text-align: center;
+      -moz-border-radius: 170px;
+      -webkit-border-radius: 170px;
+      border-radius: 170px;
+      left: 47%; }
+      .SERVICEctn .AboutUs .circle2::before {
+        content: "SERVICES";
+        top: 40px;
+        left: -135px;
+        width: 200%;
+        position: absolute; }
+  .SERVICEctn .subtit {
+    margin-top: 200px;
+    padding-bottom: 100px;
+    position: relative;
+    font-family: Lato-regular;
+    font-size: 30px;
+    color: #566065;
+    font-weight: normal; }
+    .SERVICEctn .subtit::after {
+      position: absolute;
+      left: 47.7%;
+      bottom: -40px;
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-top: 40px solid #ffffff; }
+
+.serviceDecrpt .serviceImg {
+  margin: 0px 30px 30px 0px;
+  float: left; }
+.serviceDecrpt:first-child .decrpt {
+  margin-bottom: 50px; }
+
+.figure .feedback {
+  margin-top: 30px;
+  position: relative;
+  box-shadow: -40px 95px 22px -98px rgba(0, 0, 0, 0.75);
+  background-color: #ffffff;
+  padding: 40px 20px;
+  font-family: "OpenSans-Light-Italic";
+  font-size: 16px;
+  color: #566065;
+  font-weight: normal;
+  text-align: left; }
+  .figure .feedback::after {
+    position: absolute;
+    left: 60px;
+    bottom: -20px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #ffffff; }
+.figure .feedbacker {
+  text-align: left;
+  margin-bottom: 50px;
+  padding: 40px 25px 0px 25px;
+  font-family: "OpenSans-Light-Italic";
+  font-size: 12px;
+  color: #a9a9a9;
+  font-weight: normal; }
+  .figure .feedbacker img {
+    margin-right: 18px;
+    float: left; }
+  .figure .feedbacker .feedbackername {
+    font-family: "OpenSans-Light";
+    font-size: 16px;
+    color: #282828;
+    font-weight: normal; }
+
+.giveatry {
+  background-image: url("../images/giveatry_06.jpg");
+  height: 352px;
+  background-repeat: no-repeat; }
+  .giveatry .givingbtn img {
+    padding: 15px 30px;
+    background-color: #f89a3d; }
+  .giveatry .giveqoute {
+    margin: 0px 0px 30px 0px; }
+
+.PORTFOLIOctn {
+  padding-left: 140px;
+  padding-right: 140px;
+  padding: 80px 140px 0px 140px;
+  text-align: center;
+  background-color: #ffffffff; }
+  @media (max-width: 1023px) {
+    .PORTFOLIOctn {
+      padding: 80px 0px; } }
+  .PORTFOLIOctn span {
+    color: #f89a3d; }
+  .PORTFOLIOctn .AboutUs {
+    clear: both;
+    position: relative;
+    font-family: "Oswald";
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 400; }
+    .PORTFOLIOctn .AboutUs .circle {
+      width: 170px;
+      height: 170px;
+      background: #566065;
+      text-align: center;
+      -moz-border-radius: 170px;
+      -webkit-border-radius: 170px;
+      border-radius: 170px;
+      position: absolute;
+      left: 36%; }
+    .PORTFOLIOctn .AboutUs .circle2 {
+      position: absolute;
+      width: 170px;
+      height: 170px;
+      background: #f89a3d;
+      text-align: center;
+      -moz-border-radius: 170px;
+      -webkit-border-radius: 170px;
+      border-radius: 170px;
+      left: 47%; }
+      .PORTFOLIOctn .AboutUs .circle2::before {
+        content: "PORTFOLIO";
+        top: 40px;
+        left: -135px;
+        width: 200%;
+        position: absolute; }
+  .PORTFOLIOctn .subtit {
+    margin-top: 200px;
+    padding-bottom: 100px;
+    position: relative;
+    font-family: Lato-regular;
+    font-size: 30px;
+    color: #566065;
+    font-weight: normal; }
+    .PORTFOLIOctn .subtit::after {
+      position: absolute;
+      left: 47.7%;
+      bottom: -40px;
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-top: 40px solid #ffffff; }
 
 /*# sourceMappingURL=style.css.map */

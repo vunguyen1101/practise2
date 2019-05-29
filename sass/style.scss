@@ -10,6 +10,7 @@ header{
     text-align: center;
     .headd{
         position: absolute;
+        width: 100%;
         .headeli{
             padding: 50px 0px;
             margin-top: 100px;
@@ -26,6 +27,11 @@ header{
             .orange{
                 background-color: $main-bright;
                 padding: 0px 10px;
+            }
+        }
+        @media (max-width: 1500px) {
+            .amazing{
+                padding: 70px 0px;
             }
         }
     }
@@ -106,6 +112,7 @@ nav{
     }
     span{
         @include fontface($font-heading,24px,$main-dark,normal);
+        text-transform: uppercase;
     }
     .decrpt{
         margin-top: 10px;
@@ -151,8 +158,6 @@ nav{
         @include Drawpercentline(95%);
     }
 
-    ///////////HERE ARE SOME INTERESTING NUMBER....
-
     .figure{
         padding-bottom:100px;
         width: 100%;
@@ -173,7 +178,11 @@ nav{
     height: 500px;
     width: auto;
     background-image: url('../images/marktwain_06.jpg');
+    background-repeat: no-repeat;
     .quote{
+        span{
+            color: $main-bright;
+        }
         margin: 40px 0px;
         @include fontface('Oswald-200',36px,#ffffff,normal);
     }
@@ -181,15 +190,33 @@ nav{
         @include fontface('Oswald-200',24px,#ffffff,normal);
     }
 }
+@media (max-width: 1500px) {
+    .markHain{
+        padding: 70px 0px;
+    }
+}
 .ourteamctn{
     @include Draw2cicle('OUR TEAM');
-    span{
-        color: $main-bright;
-    }
+    // span{
+    //     color: $main-bright;
+    // }
 }
 .johnDoe{
     margin-bottom: 10px;
     background-color: #ffffff;
+    .JohnDoeImg{
+        background-image: url('../images/johnDoe_03.jpg');
+        background-repeat: no-repeat;
+        height: 246px;
+        .jdhover{
+            background-color: rgba($color: $main-bright, $alpha: 0.5);
+            height: 246px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            display: none;
+        }
+    }
     .decrpt{
         padding:0px 20px 30px 20px;
         color: #afb6ba;
@@ -205,8 +232,99 @@ nav{
     .founder{
         @include fontface($font-heading,14px,#afb6ba,normal);
     }
+    &:hover{
+        
+        .JohnDoeImg{
+            .jdhover{
+                display: flex;
+                
+            }
+        }   
+    }
+    .viewprofile{
+        background-color: rgba($color:$main-dark, $alpha: 0.3);
+        @include fontface($font-heading,18px,#ffffff,bold);
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+    }
 }
 .amazingclient{
     color: $main-dark;
     padding: 10px 120px;
 }
+.buble{
+    margin-top: 30px;
+}
+.cilent{
+    margin-top: 50px;
+}
+/////===============================service===================================================================================
+.SERVICEctn{
+    @include Draw2cicle('SERVICES');
+}
+.serviceDecrpt{
+    .serviceImg{
+        margin: 0px 30px 30px 0px;
+        float: left;
+    }
+    &:first-child{
+        .decrpt{
+            margin-bottom: 50px;
+        }  
+    }
+}
+.figure{
+    .feedback{
+        margin-top: 30px;
+        position: relative;
+        box-shadow: -40px 95px 22px -98px rgba(0,0,0,0.75);
+        background-color: #ffffff;
+        padding: 40px 20px;
+        @include fontface($font-Feedback,16px,$main-dark,normal);
+        text-align: left;
+        &::after{
+            position: absolute;
+            left: 60px;
+            bottom: -20px;
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid #ffffff;
+        }
+    }
+    .feedbacker{
+        text-align: left;
+        margin-bottom: 50px;
+        padding: 40px 25px 0px 25px;
+        img{
+            margin-right: 18px;
+            float: left;
+        }
+        .feedbackername{
+            @include fontface('OpenSans-Light',16px,#282828,normal);
+        }
+        @include fontface($font-Feedback,12px,#a9a9a9,normal);
+    }
+}
+///============ PORTFOLIO============================================================================================================
+.giveatry{
+    background-image: url('../images/giveatry_06.jpg');
+    height: 352px;
+    background-repeat: no-repeat;
+    .givingbtn{
+        img{
+            padding: 15px 30px;
+            background-color: #f89a3d;
+        }
+    }
+    .giveqoute{
+        margin: 0px 0px 30px 0px;
+    }
+}
+.PORTFOLIOctn{
+    @include Draw2cicle('PORTFOLIO');
+}
+

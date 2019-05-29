@@ -35,5 +35,17 @@
   font-style: normal;
   src: url("../fonts/oswald/oswald-v17-latin-300.eot"), url("../fonts/oswald/oswald-v17-latin-300.woff2") format("woff2"), url("../fonts/oswald/oswald-v17-latin-300.woff") format("woff"), url("../fonts/oswald/oswald-v17-latin-300.ttf") format("truetype"), url("../fonts/oswald/oswald-v17-latin-300.svg") format("svg");
   /* Legacy iOS */ }
+@font-face {
+  font-family: 'OpenSans-Light';
+  font-style: normal;
+  src: url("../fonts/OpenSans/OpenSans-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: 'OpenSans-Light-Italic';
+  font-style: normal;
+  src: url("../fonts/OpenSans/OpenSans-LightItalic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'OpenSans-regular';
+  font-style: normal;
+  src: url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype"); }
 
 /*# sourceMappingURL=fonts.css.map */

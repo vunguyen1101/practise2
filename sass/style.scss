@@ -171,7 +171,6 @@ nav{
 }
 ////// ===========OUR TEAM========================================================================================================================
 .markHain{
-    //'Oswald-200'
     margin-bottom: 20px;
     padding: 90px 415px;
     text-align: center;
@@ -197,9 +196,6 @@ nav{
 }
 .ourteamctn{
     @include Draw2cicle('OUR TEAM');
-    // span{
-    //     color: $main-bright;
-    // }
 }
 .johnDoe{
     margin-bottom: 10px;
@@ -252,14 +248,27 @@ nav{
 .amazingclient{
     color: $main-dark;
     padding: 10px 120px;
+    @media (max-width: 991px) {  
+        padding: 10px 0px;  
+    }
 }
 .buble{
     margin-top: 30px;
 }
 .cilent{
+    @media (max-width: 374px) {  
+        .buble{
+            margin: 0;
+            width: 100%;
+            height: auto;
+        } 
+    }
     margin-top: 50px;
 }
 /////===============================service===================================================================================
+.twitterBrg{
+    background-image: url('../images/markHainTwit_02.jpg');
+}
 .SERVICEctn{
     @include Draw2cicle('SERVICES');
 }
@@ -272,6 +281,9 @@ nav{
         .decrpt{
             margin-bottom: 50px;
         }  
+    }
+    @media (max-width: 767px) { 
+        margin-bottom: 50px;
     }
 }
 .figure{
@@ -318,6 +330,8 @@ nav{
         img{
             padding: 15px 30px;
             background-color: #f89a3d;
+            border-radius: 2px;
+            box-shadow: inset 0px -6px 7px -2px rgba(0,0,0,0.56);
         }
     }
     .giveqoute{
@@ -328,3 +342,329 @@ nav{
     @include Draw2cicle('PORTFOLIO');
 }
 
+/////isotope
+ 
+.portfolio-tabs{
+    .tabs{
+        margin-bottom: 50px;
+        text-align: center;
+        li{
+            cursor:pointer;
+            box-shadow: inset 2px -8px 3px -4px rgba(0,0,0,0.31);
+            display: inline-block;
+            height: 50px;
+            line-height: 50px;
+            background-color: $main-bright;
+            @include fontface($lato-light,24px,#ffffff,normal);
+            text-transform: uppercase;
+            padding: 0px 30px;
+            margin-right: 15px;
+            border-radius: 50px;
+            @media (max-width: 1023px) { 
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+.boxes{
+    display: flex;
+    flex-flow: wrap;
+    margin-bottom: 20px;
+    .box{
+        position: relative;
+        width: 25%;      
+        img{
+            width: 100%;
+        }
+        .boxhover{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 3;
+            background-color: rgba($color: $main-bright, $alpha: 0.6);
+            .boxsndTit{
+                @include fontface($lato-light,14px,#ffffff,normal);
+            }
+            .boxTit{
+                @include fontface($font-heading,18px,#ffffff,normal);
+            }
+            hr{
+                margin: 10px auto;
+                border-bottom: 1px solid #ffffff;
+                width: 25%;
+            }
+            display: none;
+        }
+        &:hover{
+            .boxhover{
+                display: flex;
+            }
+        }
+        @media (max-width: 1023px) { 
+        width: 33.3333%;
+        }
+        @media (max-width: 767px) { 
+            width: 50%;
+        }
+    }
+}
+
+
+///================================================== PRICING  ======================================================================
+.PRICINGctn{
+    @include Draw2cicle('PRICING');
+}
+.pricingcircleCtn{
+    margin-top: 44px;
+    display: flex;
+    justify-content: center;
+    .pricingcircle{
+        @include DrawCircle(138px,$main-dark);
+        display: flex;
+        justify-content: center;
+        line-height: 138px;
+        .num{
+            @include fontface('OpenSans-Light',48px,#ffffff,normal);
+        }
+        .dergee{
+            @include fontface('OpenSans-Light',28px,#ffffff,normal);
+            line-height: 120px;
+            margin-left: 5px;
+        }
+
+    }
+}
+.addBacround{
+    transition: transform 0.8s ease;
+    transform: scale(1.168);
+    background-image: url('../images/pricingBrg_03.jpg');  
+    border: none;
+    .pricingcircle{
+        @include DrawCircle(138px,#ffffff);
+        .num{
+            @include fontface('OpenSans-Light',48px,$main-bright,normal);
+        }
+        .dergee{
+            @include fontface('OpenSans-Light',28px,$main-bright,normal);
+        }
+    }
+    .pricingStan{
+        color: #ffffff;
+    }
+    .thumbbtn{
+        background-color: #ffffff;
+        color: $main-bright;
+    }
+}
+.pricingTable{
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    background-color: #ffffff;
+    text-align: center;
+    margin-bottom: 125px;
+}
+.thumbbtn{
+    margin: 40px 0px 56px 0px;
+    img{
+        margin-right: 10px;
+        width: 20px;
+        margin-bottom: 8px;
+    }
+    background-color: $main-dark;
+    border: none;
+    height: 46px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 4px;
+    line-height: 46px;
+    @include fontface($MyriadPro-Regular,20px,#ffffff,normal);
+}
+.pricingStan{
+    margin: 50px 0px 30px 0px;
+    @include fontface($OpenSans-Light,30px,$main-dark,normal);
+}
+.option{
+    width: 100%;
+    padding: 0; 
+    li{
+        margin: 1px 0px 0px 0px;
+        img{
+            margin-right: 20px;
+        }
+        background-color:rgba($color: #f6f6f6, $alpha: 0.7) ;
+        height:50px;
+        line-height: 50px;
+        list-style-type: none;
+        @include fontface($font-heading,14px,#000000,normal);
+    }
+}
+
+///================================================== CONTACT  ======================================================================
+.keepintouch{
+    background-image: url('../images/keepintouhc_02.jpg');
+
+    .keepQt{
+        @include fontface($font-heading-bold,60px,#ffffff,normal);
+        @media (max-width: 505px) {  
+            font-size: 50px;
+        }
+    }
+    .address{
+        margin: 40px auto;
+        @include fontface($font-heading-light,48px,#ffffff,normal);
+        @media (max-width: 505px) {  
+            margin: 10px auto;
+        }
+        @media (max-width: 505px) {  
+            font-size: 35px;
+        }
+    }
+    .callus{
+        @include fontface($font-heading-light,30px,#9b9b9b,normal);
+        background-color: rgba($color: #171412, $alpha: 0.5);
+        height: 70px;
+        line-height: 70px;
+        display: flex;
+        justify-content: center;
+        @media (max-width: 505px) {  
+            display: block;
+        }
+        @media (max-width: 365px) {  
+            height: 140px;
+            .dot{
+                display: none;
+            }
+        }
+        .dot{
+            margin: 30px 15px;
+            @include DrawCircle(10px,#9b9b9b);
+        }
+    }
+}
+.CONTACTctn{
+    @include Draw2cicle('CONTACT');
+}
+#map{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.comment{
+    top: 0;
+    padding: 60px 70px;
+    width: 570px;
+    margin-top: 150px;
+    left: 32%;
+    background-color: #ffffff;
+    position: absolute;
+    @media (max-width: 1200px) {  
+        left: 20%;
+    }
+    @media (max-width: 768px) {  
+        width: 70%;
+        left: 16%;
+    }
+    @media (max-width: 600px) {  
+        padding: 60px 5px;
+    }
+    form{
+        display: grid;
+        @include fontface($lato-light,16px,#bebcbc,normal);
+        input{
+            height: 50px;
+            border-radius: 4px;
+            border: 1px solid #e6e6e6;
+            margin-bottom: 20px;
+            padding: 0px 20px;
+            background-color: #f6f6f6;
+        }
+        textarea{
+            padding:10px 20px;
+            margin-bottom: 20px;
+            background-color: #f6f6f6;
+            border-radius: 4px;
+            border: 1px solid #e6e6e6;
+        }
+        button{
+            @include fontface($font-heading-light,18px,#ffffff,normal);
+            background-color: $main-bright;
+            border: none;
+            height: 50px;
+            border-radius: 4px;
+            box-shadow: inset 0px -36px 2px -32px rgba(0,0,0,0.34);
+        }
+    }
+}
+
+//==============================FOOTER================================================================================
+footer{
+    .Footercell{
+        margin: 100px 0px 40px 0px;
+    }
+    .FooterTit{
+        @include fontface($font-heading-bold,18px,#ffffff,normal);
+        margin-bottom: 40px;
+    }
+    @include fontface($lato-light,16px,#a9a9a9,normal);
+    background-color: #333333;
+    .post{
+        margin-bottom: 20px;
+        img{
+            float: left;
+            margin-right: 15px
+        }
+        span{
+            @include fontface($lato-light,14px,#6e6e6e,normal); 
+        }
+    }
+    .tag{
+        height: 30px;
+        border-radius: 5px;
+        background-color: #272727;
+        display: inline-block;
+        line-height: 30px;
+        padding: 0px 15px;
+        margin: 0px 10px 10px 0px;
+    }
+    .galery{
+        display: flex;
+        flex-flow: wrap;
+        img{
+            margin: 0px 10px 10px 0px;
+        }
+    }
+    .boderContnent{
+        border-bottom: 1px solid #212121;
+    }
+    .connectus{
+        span{
+            margin: 30px 0px;
+        }
+        border-top: 1px solid #494949;
+        @include fontface($font-heading-light,18px,#ffffff,normal);
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.copyright{
+    @include fontface($lato-light,16px,#a9a9a9,normal); 
+    height: 70px;
+    line-height: 70px;
+    background-color: #222222;
+    .leftcopy{
+        cursor: pointer;
+        float: right;
+        a{
+            text-decoration: none;
+            color: #a9a9a9;
+        }
+        span{
+            margin-left: 5px;
+        }
+    }
+}

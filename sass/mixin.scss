@@ -14,7 +14,6 @@
     -moz-border-radius: $width;
     -webkit-border-radius: $width;
     border-radius:$width;
-    
 }
 @mixin AboutUsImg($left,$top) {
     z-index: 1;
@@ -70,6 +69,9 @@
             @include DrawCircle(170px,$main-dark);
             position: absolute;
             left: 36%;
+            // @media (max-width: 360px) { 
+            //     left:4%;
+            // }
         }
         .circle2 {
             position: absolute;
@@ -78,12 +80,66 @@
             &::before{
                 content: $mess;
                 top: 40px;
-                left: -135px;
+                left: -78%;
                 width: 200%;
                 position: absolute;
             }
+            @media (max-width: 320px) { 
+
+            }
         }
-    
+        @media (max-width: 1200px) { 
+            .circle{
+                left: 32%;
+            }
+        }
+        @media (max-width: 1023px) { 
+            .circle{
+                left: 36%;
+            }
+        }
+        @media (max-width: 991px) { 
+            .circle{
+                left: 33%;
+            }
+        }
+        @media (max-width: 767px) { 
+            .circle{
+                left: 24%;
+            }
+            .circle2{
+                left: 43%;
+            }
+        }
+        @media (max-width: 539px) { 
+            .circle{
+                left: 18%;
+            }
+            .circle2{
+                left: 40%;
+            }
+        }
+        @media (max-width: 480px) { 
+            .circle{
+                left: 14%;
+            }
+        }
+        @media (max-width: 410px) { 
+            .circle{
+                left: 11%;
+            }
+        }
+        @media (max-width: 370px) { 
+            .circle{
+                left: 7%;
+            }
+        }
+        @media (max-width: 330px) { 
+            .circle{
+                left: 5%;
+            }
+        }
+   
     }
     .subtit{
         margin-top: 200px;
@@ -91,6 +147,7 @@
         position: relative;
         @include fontface($lato-regular,30px,$main-dark,normal);
         &::after{
+            z-index: 1;
             position: absolute;
             left: 47.7%;
             bottom: -40px;
@@ -100,6 +157,12 @@
             border-left: 30px solid transparent;
             border-right: 30px solid transparent;
             border-top: 40px solid #ffffff;
+            @media (max-width: 1023px) {  
+                bottom: -120px;
+            }
+            @media (max-width: 767px) {  
+                left: 45%;
+            }
         }
     }
 }

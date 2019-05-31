@@ -204,10 +204,10 @@ label {
   display: inline-block;
   margin-bottom: .5rem;
 }
-
+/* 
 button {
   border-radius: 0;
-}
+} */
 
 button:focus {
   outline: 1px dotted;

@@ -1,5 +1,6 @@
-
+$OpenSans-regular:'OpenSans-regular';
 $font-Feedback:'OpenSans-Light-Italic';
+$OpenSans-Light:'OpenSans-Light';
   /* oswald-regular - latin */
 $font-heading: 'Oswald';
 @font-face {
@@ -12,6 +13,29 @@ $font-heading: 'Oswald';
          url('../fonts/oswald/oswald-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/oswald/oswald-v17-latin-500.svg') format('svg'); /* Legacy iOS */
   }
+
+$font-heading-light: 'Oswald-light';
+@font-face {
+    font-family: 'Oswald-light';
+    font-style: normal;
+    src: url('../fonts/oswald/oswald-v17-latin-200.eot'),
+         url('../fonts/oswald/oswald-v17-latin-200.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/oswald/oswald-v17-latin-200.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/oswald/oswald-v17-latin-200.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/oswald/oswald-v17-latin-200.svg') format('svg'); /* Legacy iOS */
+  }
+
+$font-heading-bold: 'Oswald-bold';
+@font-face {
+    font-family: 'Oswald-bold';
+    font-style: normal;
+    src: url('../fonts/oswald/oswald-v17-latin-700.eot'),
+         url('../fonts/oswald/oswald-v17-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/oswald/oswald-v17-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/oswald/oswald-v17-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/oswald/oswald-v17-latin-700.svg') format('svg'); /* Legacy iOS */
+  }
+
 $lato-regular:Lato-regular;
 @font-face {
     font-family: Lato-regular;
@@ -86,7 +110,13 @@ src: url('../fonts/OpenSans/OpenSans-LightItalic.ttf')format('truetype');
 }
 
 @font-face {
-     font-family: 'OpenSans-regular';
-     font-style: normal;
-     src: url('../fonts/OpenSans/OpenSans-Regular.ttf')format('truetype');
-     }
+font-family: 'OpenSans-regular';
+font-style: normal;
+src: url('../fonts/OpenSans/OpenSans-Regular.ttf')format('truetype');
+}
+$MyriadPro-Regular:'MyriadPro-Regular';
+@font-face {
+font-family: 'MyriadPro-Regular';
+font-style: normal;
+src: url('../fonts/MyriadPro-Regular.otf')format('truetype');
+}

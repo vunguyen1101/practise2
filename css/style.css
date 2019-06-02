@@ -1107,6 +1107,8 @@ nav {
   .addBacround .thumbbtn {
     background-color: #ffffff;
     color: #f89a3d; }
+    .addBacround .thumbbtn svg {
+      fill: #f89a3d; }
 
 .pricingTable {
   border: 1px solid #dddddd;
@@ -1128,10 +1130,10 @@ nav {
   font-size: 20px;
   color: #ffffff;
   font-weight: normal; }
-  .thumbbtn img {
+  .thumbbtn svg {
     margin-right: 10px;
     width: 20px;
-    margin-bottom: 8px; }
+    fill: #ffffff; }
 
 .pricingStan {
   margin: 50px 0px 30px 0px;

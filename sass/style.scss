@@ -458,7 +458,11 @@ nav{
     .thumbbtn{
         background-color: #ffffff;
         color: $main-bright;
+        svg{
+            fill: $main-bright;
+        }
     }
+
 }
 .pricingTable{
     border: 1px solid #dddddd;
@@ -469,10 +473,10 @@ nav{
 }
 .thumbbtn{
     margin: 40px 0px 56px 0px;
-    img{
+    svg{
         margin-right: 10px;
         width: 20px;
-        margin-bottom: 8px;
+        fill: #ffffff;
     }
     background-color: $main-dark;
     border: none;

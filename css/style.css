@@ -319,8 +319,8 @@ nav {
       left: 42%; }
   .fullaboutus .percentline {
     margin-bottom: 15px; }
-  .fullaboutus .ScrolleveRemove {
-    background-color: red; }
+  .fullaboutus .scrollEvent::before {
+    animation: none !important; }
   .fullaboutus .no1 {
     height: 40px;
     background-color: #566065;
@@ -353,7 +353,7 @@ nav {
       content: "";
       height: 100%;
       background-color: #f89a3d;
-      animation: moveno1 4s forwards; }
+      animation: moveno1 2s forwards; }
   .fullaboutus .no2 {
     height: 40px;
     background-color: #566065;
@@ -386,7 +386,7 @@ nav {
       content: "";
       height: 100%;
       background-color: #f89a3d;
-      animation: moveno2 4s forwards; }
+      animation: moveno2 2s forwards; }
   .fullaboutus .no3 {
     height: 40px;
     background-color: #566065;
@@ -419,7 +419,7 @@ nav {
       content: "";
       height: 100%;
       background-color: #f89a3d;
-      animation: moveno3 4s forwards; }
+      animation: moveno3 2s forwards; }
   .fullaboutus .no4 {
     height: 40px;
     background-color: #566065;
@@ -452,7 +452,7 @@ nav {
       content: "";
       height: 100%;
       background-color: #f89a3d;
-      animation: moveno4 4s forwards; }
+      animation: moveno4 2s forwards; }
 @keyframes moveno1 {
   from {
     width: 0%; }

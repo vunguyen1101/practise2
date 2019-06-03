@@ -157,8 +157,10 @@ nav{
     .percentline{
         margin-bottom: 15px;
     }
-    .ScrolleveRemove{
-        background-color: red;
+    .scrollEvent{
+        &::before{
+            animation: none !important;
+        }
     }
     .no1{
         @include Drawpercentline(90%,1);
@@ -189,7 +191,7 @@ nav{
         from {width:0%;}
         to { width:95%;}
     }
-    //////
+    
     .figure{
         padding-bottom:100px;
         width: 100%;

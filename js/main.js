@@ -59,20 +59,36 @@ $('.twitterBrg').slick({
 });
 
 ///////scrolle event
-
 $(window).scroll(function() {
-  var hT = $('#scroll-to').offset().top,
-      hH = $('#scroll-to').outerHeight(),
-      wH = $(window).height(),
+  var hA = $('#scroll-above').offset().top,
+      hB = $('#ABOUT').offset().top,
       wS = $(this).scrollTop();
-   console.log((hT-wH) , wS);
-  if (wS > (hT+hH-wH)&&wS < (hT+hH+wH)){
-      $('.percentline').css({"background":"red"});
+  if ( wS > hA || wS <hB ){
+      $(".no1").addClass("scrollEvent"); 
+      $(".no2").addClass("scrollEvent"); 
+      $(".no3").addClass("scrollEvent"); 
+      $(".no4").addClass("scrollEvent"); 
   }
-  // else $('.percentline').css({"left":"30px"});
+  else{
+    $(".no1").removeClass("scrollEvent");
+    $(".no2").removeClass("scrollEvent");
+    $(".no3").removeClass("scrollEvent");
+    $(".no4").removeClass("scrollEvent");
+  } 
 });
+/////scrollevent for counter
 
+// $(window).scroll(function() {
+//   var hA = $('#CounterScroll-above').offset().top,
+//       hB = $('#CounterScroll-below').offset().top,
+//       wS = $(this).scrollTop();
+//   if ( wS < 50 ){
+//       $(".counter").addClass("counter"); 
+//   }
+//   else{
+//     $(".counter").removeClass("counter");
+//   } 
+// });
 
-
-
+// new WOW().init();
 

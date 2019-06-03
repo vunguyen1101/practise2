@@ -70,6 +70,18 @@ nav{
                 &:last-child{
                     margin-right: 0px;
                 }
+                input{
+                    border: none;
+                    display: none;
+                }
+                &:last-child:hover{
+                    transition: all 0.5s;
+                    input{
+                        display: inline-block;
+                    }
+                    border-bottom:$main-dark 3px solid;
+                    @include fontface($lato-light,14px,$main-dark,400);
+                }
             }
         }
     }
@@ -145,19 +157,39 @@ nav{
     .percentline{
         margin-bottom: 15px;
     }
+    .ScrolleveRemove{
+        background-color: red;
+    }
     .no1{
-        @include Drawpercentline(90%);
+        @include Drawpercentline(90%,1);
     }
     .no2{
-        @include Drawpercentline(85%);
+        @include Drawpercentline(85%,2);
     }
     .no3{
-        @include Drawpercentline(70%);
+        @include Drawpercentline(70%,3);
     }
     .no4{
-        @include Drawpercentline(95%);
+        @include Drawpercentline(95%,4);
     }
-
+    ///animation progress bar
+    @keyframes moveno1 {
+        from {width:0%;}
+        to { width:90%;}
+    }
+    @keyframes moveno2 {
+        from {width:0%;}
+        to { width:85%;}
+    }
+    @keyframes moveno3 {
+        from {width:0%;}
+        to { width:70%;}
+    }
+    @keyframes moveno4 {
+        from {width:0%;}
+        to { width:95%;}
+    }
+    //////
     .figure{
         padding-bottom:100px;
         width: 100%;
@@ -229,7 +261,6 @@ nav{
         @include fontface($font-heading,14px,#afb6ba,normal);
     }
     &:hover{
-        
         .JohnDoeImg{
             .jdhover{
                 display: flex;
@@ -264,9 +295,39 @@ nav{
         } 
     }
     margin-top: 50px;
+    &:hover{ 
+        .tooltipp{
+           display: inline-block; 
+        }  
+    }
+    .tooltipp{
+        display: none;
+        margin-top: 30px;
+        padding: 0px 20px;
+        @include fontface($OpenSans-Light,16px,#ffffff,normal);
+        height: 40px;
+        line-height: 40px;
+        border-radius: 5px;
+        background-color: #c6c9ca;
+        position: relative;
+        &::after{
+            content: "";
+            bottom: 100%;
+            left: 45%;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-bottom: 8px solid #c6c9ca;        
+        }
+    }
 }
 /////===============================service===================================================================================
 .twitterBrg{
+    .slick-dots{
+        margin-top: 30px;
+    }
     background-image: url('../images/markHainTwit_02.jpg');
 }
 .SERVICEctn{
@@ -663,12 +724,13 @@ footer{
     .leftcopy{
         cursor: pointer;
         float: right;
-        a{
-            text-decoration: none;
-            color: #a9a9a9;
-        }
+        text-decoration: none;
+        color: #a9a9a9;
         span{
             margin-left: 5px;
         }
     }
+}
+.test{
+    left: 0px;
 }

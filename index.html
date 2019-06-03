@@ -7,8 +7,12 @@
     <title>Bai2</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" href="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>			
     <script src="js/isotope.pkgd.min.js"></script>
+    <script src="slick/slick.min.js"></script>
 </head>
 <body>
     <header  id="HOME">     
@@ -45,14 +49,17 @@
                         <li><a href="#CONTACT">CONTACT</a></li>
                         <li><a href="#PAGES">PAGES<img src="images/arrowndownNAV_03.png" alt="arrowndownNAV_03"></a></li>
                         <li><a href="#BLOG">BLOG<img src="images/blogNAV_03.png" alt="blogNAV_03"></a></li>
-                        <li><img src="images/searchNav_03.png" alt="searchNav_03"></li>
+                        <li>
+                            <input type="text" placeholder="What you find...">
+                            <img src="images/searchNav_03.png" alt="searchNav_03">
+                        </li>
                     </ul>
                 </div>
             </nav>
         </div> 
     </section>
        <!---------------------------------------------------- ABOUTUS SECTION ---------------------------------------->
-    <section>
+    <section id="scroll-to">
         <div class="container"> 
             <div id="ABOUT" class="aboutusctn">
                 <div class="AboutUs">
@@ -106,10 +113,10 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="fourpercentline learnmore">
-                                <div class="no1 percentline"><span class="feature">HTML/CSS</span><span class="per">90%</span></div>
-                                <div class="no2 percentline"><span class="feature">Graphics Design</span><span class="per">85%</span></div>
-                                <div class="no3 percentline"><span class="feature">Wordpress</span><span class="per">70%</span></div>
-                                <div class="no4 percentline"><span class="feature">Web design</span><span class="per">95%</span></div>
+                                <div class="no1 percentline"><span class="feature">HTML/CSS</span><span class="per"><span class="counter">90</span>%</span></div>
+                                <div class="no2 percentline"><span class="feature">Graphics Design</span><span class="per"><span class="counter">85</span>%</span></div>
+                                <div class="no3 percentline"><span class="feature">Wordpress</span><span class="per"><span class="counter">70</span>%</span></div>
+                                <div class="no4 percentline"><span class="feature">Web design</span><span class="per"><span class="counter">95</span>%</span></div>
                             </div>
                         </div>
                     </div>
@@ -120,28 +127,28 @@
                         HERE’S SOME INTERESTING NUMBERS ABOUT US
                         <div class="row">
                             <div class="col-lg-3 col-sm-6">
-                                <div class="number">386</div>
+                                <div class="counter number">386</div>
                                 <span>PROJECTS COMPLETED</span>
                                 <div class="decrpt">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi enim provident odit impedit
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-6">
-                                <div class="number">291</div>
+                                <div class="counter number">291</div>
                                 <span>CLIENT SERVED</span>
                                 <div class="decrpt">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi enim provident odit impedit
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-6">
-                                <div class="number">3925</div>
+                                <div class="counter number">3925</div>
                                 <span>SONGS PLAYED</span>
                                 <div class="decrpt">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi enim provident odit impedit
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-6">
-                                <div class="number">6740</div>
+                                <div class="counter number">6740</div>
                                 <span>COFFEE CUPS</span>
                                 <div class="decrpt">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi enim provident odit impedit
@@ -226,25 +233,40 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-2 col-sm-4 col-6">
-                        <div class="cilent"><img src="images/ubuntu_03.png" alt="ubuntu_03"></div>
+                        <div class="cilent">
+                            <img src="images/ubuntu_03.png" alt="ubuntu_03">
+                            <span class="tooltipp">UBUNTU</span>
+                        </div>
                     </div>
                     <div class="col-lg-2 col-sm-4 col-6">
                         <div class="cilent">
                             <img class="buble" src="images/archlinux_03.png" alt="archlinux_03">
-                            <img class="buble" src="images/archlinuxBuble_07.png" alt="bublee">
+                            <span class="tooltipp">ARCHLINUX</span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-sm-4 col-6">
-                        <div class="cilent"><img src="images/soundcloud_03.png" alt="soundcloud_03"></div>
+                        <div class="cilent">
+                            <img src="images/soundcloud_03.png" alt="soundcloud_03">
+                            <span class="tooltipp">SOUNDCLOUD</span>
+                        </div>
                     </div>
                     <div class="col-lg-2 col-sm-4 col-6">
-                        <div class="cilent"><img class="buble" src="images/cc_06.png" alt="cc"></div>
+                        <div class="cilent">
+                            <img class="buble" src="images/cc_06.png" alt="cc">
+                            <span class="tooltipp">CREATIVECOMMONS</span>
+                        </div>
                     </div>
                     <div class="col-lg-2 col-sm-4 col-6">
-                        <div class="cilent"><img src="images/nicke_03.png" alt="nicke_03"></div>
+                        <div class="cilent">
+                            <img src="images/nicke_03.png" alt="nicke_03">
+                            <span class="tooltipp">NICKELODEON</span>
+                        </div>
                     </div>
                     <div class="col-lg-2 col-sm-4 col-6">
-                        <div class="cilent"><img src="images/dreamWOrk_06.png" alt="dreamWOrk_06"></div>
+                        <div class="cilent">
+                            <img src="images/dreamWOrk_06.png" alt="dreamWOrk_06">
+                            <span class="tooltipp">DREAMWORK</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -254,11 +276,27 @@
     <!---------------------------------------------------- SERVICES SECTION ---------------------------------------->
    <section>
         <div class="markHain twitterBrg">
-            <div class="MHicon"><span><img src="images/twitter_07.png" alt="markhainIcon_07"></span></div>
-            <div class="quote">
-                fringilla <span>@elijah</span>, nec venenatis sem posuere quis. Sed sed faucinus ligura
+            <div>
+                <div class="MHicon"><span><img src="images/twitter_07.png" alt="markhainIcon_07"></span></div>
+                <div class="quote">
+                    fringilla <span>@elijah</span>, nec venenatis sem posuere quis. Sed sed faucinus ligura
+                </div>
+                <div class="author">_ Mark Hain</div>
             </div>
-            <div class="author">_ Mark Hain</div>
+            <div>
+                <div class="MHicon"><span><img src="images/twitter_07.png" alt="markhainIcon_07"></span></div>
+                <div class="quote">
+                    fringilla <span>@elijah</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, recusandae.
+                </div>
+                <div class="author">_ Mark Hain</div>
+            </div>
+            <div>
+                <div class="MHicon"><span><img src="images/twitter_07.png" alt="markhainIcon_07"></span></div>
+                <div class="quote">
+                    fringilla <span>@elijah</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur magni adipisci ab. Et, porro assumenda!
+                </div>
+                <div class="author">_ Mark Hain</div>
+            </div>
         </div>
         <div class="container">
             <div id="SERVICE" class="SERVICEctn">
@@ -652,6 +690,11 @@
     </section>
     <footer>
         <div class="container">
+            <div class="your-class">
+                <div>your content</div>
+                <div>your content</div>
+                <div>your content</div>
+            </div>
             <div class="boderContnent">
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
@@ -735,9 +778,9 @@
             <span class="rightcopy">
                 2014 Elijah. All Rights Reserved. Designed by phonhay
             </span>
-            <span class="leftcopy">
+            <a href="#HOME" class="leftcopy">
                 Top<span><img src="images/uptotop_03.png" alt="uptotop_03"></span>
-            </span>
+            </a>
         </div>
     </section>
     <script type="text/javascript" src="js/main.js"></script>

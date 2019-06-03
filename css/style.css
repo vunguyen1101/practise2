@@ -126,6 +126,18 @@ nav {
         margin-left: 5px; }
       nav .navbar ul li:last-child {
         margin-right: 0px; }
+      nav .navbar ul li input {
+        border: none;
+        display: none; }
+      nav .navbar ul li:last-child:hover {
+        transition: all 0.5s;
+        border-bottom: #566065 3px solid;
+        font-family: Lato-300;
+        font-size: 14px;
+        color: #566065;
+        font-weight: 400; }
+        nav .navbar ul li:last-child:hover input {
+          display: inline-block; }
 
 .aboutusctn {
   padding-left: 140px;
@@ -307,6 +319,8 @@ nav {
       left: 42%; }
   .fullaboutus .percentline {
     margin-bottom: 15px; }
+  .fullaboutus .ScrolleveRemove {
+    background-color: red; }
   .fullaboutus .no1 {
     height: 40px;
     background-color: #566065;
@@ -329,12 +343,17 @@ nav {
       font-size: 16px;
       color: #ffffff;
       font-weight: normal; }
+    .fullaboutus .no1 .counter {
+      font-family: Lato-300;
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: normal; }
     .fullaboutus .no1::before {
       position: absolute;
       content: "";
       height: 100%;
-      width: 90%;
-      background-color: #f89a3d; }
+      background-color: #f89a3d;
+      animation: moveno1 4s forwards; }
   .fullaboutus .no2 {
     height: 40px;
     background-color: #566065;
@@ -357,12 +376,17 @@ nav {
       font-size: 16px;
       color: #ffffff;
       font-weight: normal; }
+    .fullaboutus .no2 .counter {
+      font-family: Lato-300;
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: normal; }
     .fullaboutus .no2::before {
       position: absolute;
       content: "";
       height: 100%;
-      width: 85%;
-      background-color: #f89a3d; }
+      background-color: #f89a3d;
+      animation: moveno2 4s forwards; }
   .fullaboutus .no3 {
     height: 40px;
     background-color: #566065;
@@ -385,12 +409,17 @@ nav {
       font-size: 16px;
       color: #ffffff;
       font-weight: normal; }
+    .fullaboutus .no3 .counter {
+      font-family: Lato-300;
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: normal; }
     .fullaboutus .no3::before {
       position: absolute;
       content: "";
       height: 100%;
-      width: 70%;
-      background-color: #f89a3d; }
+      background-color: #f89a3d;
+      animation: moveno3 4s forwards; }
   .fullaboutus .no4 {
     height: 40px;
     background-color: #566065;
@@ -413,12 +442,37 @@ nav {
       font-size: 16px;
       color: #ffffff;
       font-weight: normal; }
+    .fullaboutus .no4 .counter {
+      font-family: Lato-300;
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: normal; }
     .fullaboutus .no4::before {
       position: absolute;
       content: "";
       height: 100%;
-      width: 95%;
-      background-color: #f89a3d; }
+      background-color: #f89a3d;
+      animation: moveno4 4s forwards; }
+@keyframes moveno1 {
+  from {
+    width: 0%; }
+  to {
+    width: 90%; } }
+@keyframes moveno2 {
+  from {
+    width: 0%; }
+  to {
+    width: 85%; } }
+@keyframes moveno3 {
+  from {
+    width: 0%; }
+  to {
+    width: 70%; } }
+@keyframes moveno4 {
+  from {
+    width: 0%; }
+  to {
+    width: 95%; } }
   .fullaboutus .figure {
     padding-bottom: 100px;
     width: 100%;
@@ -620,9 +674,36 @@ nav {
       margin: 0;
       width: 100%;
       height: auto; } }
+  .cilent:hover .tooltipp {
+    display: inline-block; }
+  .cilent .tooltipp {
+    display: none;
+    margin-top: 30px;
+    padding: 0px 20px;
+    font-family: "OpenSans-Light";
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: normal;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background-color: #c6c9ca;
+    position: relative; }
+    .cilent .tooltipp::after {
+      content: "";
+      bottom: 100%;
+      left: 45%;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-bottom: 8px solid #c6c9ca; }
 
 .twitterBrg {
   background-image: url("../images/markHainTwit_02.jpg"); }
+  .twitterBrg .slick-dots {
+    margin-top: 30px; }
 
 .SERVICEctn {
   padding-left: 140px;
@@ -1422,11 +1503,13 @@ footer {
   background-color: #222222; }
   .copyright .leftcopy {
     cursor: pointer;
-    float: right; }
-    .copyright .leftcopy a {
-      text-decoration: none;
-      color: #a9a9a9; }
+    float: right;
+    text-decoration: none;
+    color: #a9a9a9; }
     .copyright .leftcopy span {
       margin-left: 5px; }
+
+.test {
+  left: 0px; }
 
 /*# sourceMappingURL=style.css.map */

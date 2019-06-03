@@ -17,24 +17,17 @@ $(document).ready(function(){
 ////end isotope
 
 /////Pricing Background
+
 $(document).ready(function(){
-  $(document).ready(function(){
-    $(".pricingTable").hover(function(){
-      $(this).addClass("addBacround");
-    },
-    function(){
-      $(this).removeClass("addBacround");
-    }); 
-  });
+  $(".pricingTable").hover(function(){
+    $(this).addClass("addBacround");
+  },
+  function(){
+    $(this).removeClass("addBacround");
+  }); 
 });
 
-//scroll to top 
-$('.leftcopy').click(function() {      
-  $('body,html').animate({
-      scrollTop : 0                      
-  }, 1000);
-});  
-
+ 
 
 //scroll to section
 $("a[href^='#']").click(function(e) {
@@ -46,3 +39,40 @@ $("a[href^='#']").click(function(e) {
 		scrollTop: position
 	},1500);
 });
+
+//////counter
+$('.counter').each(function () {
+  $(this).prop('Counter',0).animate({
+      Counter: $(this).text()
+  }, {
+      duration: 4000,
+      easing: 'swing',
+      step: function (now) {
+          $(this).text(Math.ceil(now));
+      }
+  });
+});
+
+//////// slick Twitter
+$('.twitterBrg').slick({
+  dots: true
+});
+
+///////scrolle event
+
+$(window).scroll(function() {
+  var hT = $('#scroll-to').offset().top,
+      hH = $('#scroll-to').outerHeight(),
+      wH = $(window).height(),
+      wS = $(this).scrollTop();
+   console.log((hT-wH) , wS);
+  if (wS > (hT+hH-wH)&&wS < (hT+hH+wH)){
+      $('.percentline').css({"background":"red"});
+  }
+  // else $('.percentline').css({"left":"30px"});
+});
+
+
+
+
+

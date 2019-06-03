@@ -21,8 +21,8 @@
     left: $left;
     top:$top;
 }
-@mixin Drawpercentline($percent) {
-    
+@mixin Drawpercentline($percent,$name) {
+
     height: 40px;
     background-color: #566065;
     line-height: 40px;
@@ -40,12 +40,15 @@
         z-index: 2;
         @include fontface($lato-light,16px,#ffffff,normal);
     }
+    .counter{
+        @include fontface($lato-light,16px,#ffffff,normal);
+    }
     &::before{
         position: absolute;
         content: "";
         height: 100%;
-        width: $percent;
         background-color: #f89a3d;
+        animation: moveno#{$name} 4s forwards;
     }
 }
 
@@ -69,9 +72,6 @@
             @include DrawCircle(170px,$main-dark);
             position: absolute;
             left: 36%;
-            // @media (max-width: 360px) { 
-            //     left:4%;
-            // }
         }
         .circle2 {
             position: absolute;
@@ -83,9 +83,6 @@
                 left: -78%;
                 width: 200%;
                 position: absolute;
-            }
-            @media (max-width: 320px) { 
-
             }
         }
         @media (max-width: 1200px) { 

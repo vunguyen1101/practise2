@@ -40,6 +40,20 @@ $("a[href^='#']").click(function(e) {
 	},1500);
 });
 
+////hambuger
+
+$(document).ready(function(){
+	$('.hamburger').click(function(){
+		$('.mobileNav').slideToggle(300);
+	});
+});
+
+////Serarch bar
+$(document).ready(function(){
+	$('.searchBtnDesk').click(function(){
+		$(this).toggleClass('OpenSearch');
+	});
+});
 //////counter
 $('.counter').each(function () {
   $(this).prop('Counter',0).animate({
@@ -55,7 +69,9 @@ $('.counter').each(function () {
 
 //////// slick Twitter
 $('.twitterBrg').slick({
-  dots: true
+  dots: true,
+  prevArrow: false,
+  nextArrow: false
 });
 
 ///////scrolle event
@@ -76,19 +92,27 @@ $(window).scroll(function() {
     $(".no4").removeClass("scrollEvent");
   } 
 });
-/////scrollevent for counter
+/////scrollevent for hamburger
 
-// $(window).scroll(function() {
-//   var hA = $('#CounterScroll-above').offset().top,
-//       hB = $('#CounterScroll-below').offset().top,
-//       wS = $(this).scrollTop();
-//   if ( wS < 50 ){
-//       $(".counter").addClass("counter"); 
-//   }
-//   else{
-//     $(".counter").removeClass("counter");
-//   } 
-// });
+$(window).scroll(function() {
+  var hA = $('#HOME').offset().top,
+      wS = $(this).scrollTop();
+  if ( wS > hA ){
+      $(".hamburger").css({"top":"30px"}); 
+  }
+  else{
+    $(".hamburger").css({"top":"700px"}); 
+  } 
+});
 
-// new WOW().init();
+
+
+$(document).ready(function(){
+	$('.hamburger').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+
+
+new WOW().init();
 

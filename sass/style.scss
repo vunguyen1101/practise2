@@ -38,15 +38,12 @@ header{
 
 }
 .hamburger{
-    z-index: 3;
-    position: fixed;
     @media (min-width: 767px) {
         display: none;
     }
+    position: relative;
     width: 60px;
-    height: 45px;
-    top: 30px;
-    right: 30px;
+    margin-top: 20px;
     float: right;
     transform: rotate(0deg);
     transition: .5s ease-in-out;
@@ -117,24 +114,25 @@ header{
     }
 }
 .mobileNav{
-    box-shadow: 10px 10px 6px -2px rgba(0,0,0,0.75);
-    border: 1px solid $main-dark;
     display: none;
-    background-color: #f6f6f6;
-    z-index: 2;
-    position: fixed;
-    top: 90px;
-    right: 30px;
-    border-radius: 10px;
+    position: relative;
     ul{
-        margin: 0;
+        border: 1px solid $main-dark;
+        box-shadow: 10px 10px 6px -2px rgba(0,0,0,0.75);
+        border-radius: 10px;
+        width: 100%;
+        position: absolute;
+        z-index: 4;
         padding: 20px;
         list-style-type: none;
+        top: 80px;
+        background-color: #f6f6f6;
         li{
+            border-bottom: 1px solid $main-bright;
             text-align: center;
-            width: 200px;
-            margin-bottom: 10px;
+            padding: 10px 0px;
             a{
+                display: block;
                 &:hover{
                     color: $main-bright;
                 }
@@ -142,6 +140,7 @@ header{
                 @include fontface($font-heading,20px,$main-dark,400);
             }
             input{
+                width: 80%;
                 background-color: #f6f6f6; 
                 border: none;
                 display: none;
@@ -410,6 +409,7 @@ nav{
     }
 }
 .buble{
+    width: 100%;
     margin-top: 30px;
 }
 .cilent{
@@ -813,6 +813,10 @@ footer{
         }
         span{
             @include fontface($lato-light,14px,#6e6e6e,normal); 
+        }
+        @media (max-width: 767px) {  
+            display: flex;
+            flex-direction: row;
         }
     }
     .tag{

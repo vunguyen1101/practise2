@@ -92,20 +92,10 @@ $(window).scroll(function() {
     $(".no4").removeClass("scrollEvent");
   } 
 });
+
+
+
 /////scrollevent for hamburger
-
-$(window).scroll(function() {
-  var hA = $('#HOME').offset().top,
-      wS = $(this).scrollTop();
-  if ( wS > hA ){
-      $(".hamburger").css({"top":"30px"}); 
-  }
-  else{
-    $(".hamburger").css({"top":"700px"}); 
-  } 
-});
-
-
 
 $(document).ready(function(){
 	$('.hamburger').click(function(){

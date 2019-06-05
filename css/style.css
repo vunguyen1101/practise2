@@ -781,15 +781,14 @@ nav {
 
 .cilent {
   margin-top: 50px; }
-  @media (max-width: 374px) {
-    .cilent .buble {
-      margin: 0;
-      width: 100%;
-      height: auto; } }
   .cilent:hover .tooltipp {
     visibility: visible; }
+  @media (max-width: 767px) {
+    .cilent .creativecomon {
+      height: 80px !important;
+      line-height: 20px !important;
+      padding-top: 20px !important; } }
   .cilent .tooltipp {
-    visibility: hidden;
     display: inline-block;
     margin-top: 30px;
     padding: 0px 20px;
@@ -802,6 +801,11 @@ nav {
     border-radius: 5px;
     background-color: #c6c9ca;
     position: relative; }
+    .cilent .tooltipp br {
+      display: none; }
+    @media (max-width: 767px) {
+      .cilent .tooltipp br {
+        display: inline; } }
     .cilent .tooltipp::after {
       content: "";
       bottom: 100%;
